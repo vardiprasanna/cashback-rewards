@@ -25,3 +25,7 @@ There is no Maven wrapper in this repo — use the system `mvn` (not `./mvnw`).
 Persistence: H2 in-memory database (`jdbc:h2:mem:cashbackrewards`), configured in `src/main/resources/application.properties`. `spring.jpa.hibernate.ddl-auto=update` — schema is derived from JPA entities, not migrations (no Flyway/Liquibase dependency). H2 console is enabled at `/h2-console`. `spring.jpa.show-sql=true` — SQL statements are logged, useful when debugging repository/query behavior.
 
 The package layout under `com.vardiprasanna.cashbackrewards` follows a standard layered structure — `controller`, `service` (with `service/impl`), `repository`, `model`, `dto`, `mapper`, `exception`, `config`, `util` — mirrored under `src/test/java` for `controller`/`service`/`repository` tests. Most of these packages are currently empty placeholders for the intended layering; as code is added, controllers should stay thin and delegate to services, with repositories as the only JPA/data-access layer.
+
+## Specs
+
+Feature/requirement specs live in `specs/` (one markdown file per feature). Check there for the intended behavior before implementing or modifying a feature.
