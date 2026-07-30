@@ -28,4 +28,8 @@ The package layout under `com.vardiprasanna.cashbackrewards` follows a standard 
 
 ## Specs
 
-Feature/requirement specs live in `specs/` (one markdown file per feature). Check there for the intended behavior before implementing or modifying a feature.
+Feature/requirement specs live in `specs/` (one markdown file per feature). Check there for the intended behavior before implementing or modifying a feature. Specs are written using the Example Mapping approach — rules, examples, counter-examples, and open questions (see `specs/cashback-earning.md`). When adding a new feature, write its spec in this format before implementing, and use TDD (failing test first) against the rules and examples it defines.
+
+## README
+
+`README.md` covers the same build/run/test commands and package layout as above, for human contributors.
